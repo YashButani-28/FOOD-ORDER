@@ -9,7 +9,8 @@ export default function CartItem({
   return (
     <li className="cart-item">
       <p>
-        {name} - {quantity} x {currencyFormatter.format(price)}
+        {name} - {quantity} &nbsp; &nbsp; &nbsp; Price at :-
+        {currencyFormatter.format(price)}
       </p>
       <p className="cart-item-actions">
         <button onClick={onDecrease}>-</button>
